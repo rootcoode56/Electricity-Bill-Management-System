@@ -1,0 +1,4 @@
+flask==2.3.3
+Flask-SQLAlchemy==2.5.1  # If you're adding a database in the future
+requests==2.26.0
+pytest==6.2.5  # For running tests
