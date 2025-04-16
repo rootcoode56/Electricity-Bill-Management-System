@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Admin Panel</h1>
+      <a href="/dashboard.html">Back to Dashboard</a>
+
+      <section id="users">
+        <h2>View All Users</h2>
+        <button onclick="viewAllUsers()">View All Users</button>
+        <table id="users-table" class="data-table">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Username</th>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Meter ID</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p id="users-message"></p>
+      </section>
+
+      <section id="requests">
+        <h2>Manage User Requests</h2>
+        <button onclick="manageRequests()">Manage Requests</button>
+        <table id="requests-table" class="data-table">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Name</th>
+              <th>Service Type</th>
+              <th>Status</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p id="requests-message"></p>
+      </section>
+
+      <section id="bills">
+        <h2>View Bill Details</h2>
+        <button onclick="viewAllBills()">View Bill Details</button>
+        <table id="bills-table" class="data-table">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Name</th>
+              <th>Month</th>
+              <th>Amount</th>
+              <th>Paid</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p id="bills-message"></p>
+      </section>
+
+      <section id="complaints">
+        <h2>Track Complaints</h2>
+        <button onclick="trackAllComplaints()">Track Complaints</button>
+        <table id="complaints-table" class="data-table">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Name</th>
+              <th>Complaint</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p id="complaints-message"></p>
+      </section>
+
+      <section id="search">
+        <h2>Search User</h2>
+        <form id="search-form">
+          <label for="search_type">Search by:</label>
+          <select id="search_type" name="search_type">
+            <option value="user_id">User ID</option>
+            <option value="meter_id">Meter ID</option>
+          </select>
+          <label for="query">Query:</label>
+          <input type="text" id="query" name="query" required />
+          <button type="submit">Search</button>
+        </form>
+        <table id="search-table" class="data-table">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Username</th>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Meter ID</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p id="search-message"></p>
+      </section>
+    </div>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

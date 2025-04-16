@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Electricity Management System</h1>
+        <div class="user-info">
+          <span>Welcome, <span id="username-display"></span></span>
+          <button onclick="logout()" class="exit-btn">Exit</button>
+        </div>
+      </header>
+
+      <section id="customer-menu" class="menu-card" style="display: none">
+        <h3>Customer Menu</h3>
+        <ul class="menu-list">
+          <li><a href="/billing.html">View Bill & Pay Bill</a></li>
+          <li>
+            <a href="/complaints.html">Lodge a Complaint & Track Complaints</a>
+          </li>
+
+          <li><a href="/new_connection.html">Apply for Meter Issues</a></li>
+          <li><a href="/notifications.html">View Notifications</a></li>
+          <li><button onclick="logout()" class="menu-btn">Exit</button></li>
+        </ul>
+      </section>
+
+      <section id="admin-menu" class="menu-card" style="display: none">
+        <h3>Admin Menu</h3>
+        <ul class="menu-list">
+          <li><a href="/admin.html#users">Manage Users</a></li>
+          <li><button onclick="logout()" class="menu-btn">Exit</button></li>
+        </ul>
+      </section>
+    </div>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
