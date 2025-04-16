@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaints</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Complaints</h1>
+      <a href="/dashboard.html">Back to Menu</a>
+      <h2>Lodge a Complaint</h2>
+      <form id="complaint-form">
+        <label for="complaint_text">Enter your complaint:</label>
+        <textarea id="complaint_text" name="complaint_text" required></textarea>
+        <button type="submit">Submit Complaint</button>
+      </form>
+      <h2 id="track">Track Complaints</h2>
+      <button onclick="trackComplaints()">Track Complaints</button>
+      <pre id="complaints"></pre>
+      <p id="message"></p>
+    </div>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Billing</h1>
+      <a href="/dashboard.html">Back to Menu</a>
+      <h2>View Bill</h2>
+      <form id="bill-form">
+        <label for="month">Enter month (e.g., Jan):</label>
+        <input type="text" id="month" name="month" required />
+        <button type="submit">View Bill</button>
+      </form>
+      <pre id="bill-details"></pre>
+      <h2 id="pay">Pay Bill</h2>
+      <form id="pay-form">
+        <label for="month">Enter month (e.g., Jan):</label>
+        <input type="text" id="month-pay" name="month" required />
+        <label for="payment_method">Enter payment method (card/bkash):</label>
+        <select id="payment_method" name="payment_method">
+          <option value="card">Card</option>
+          <option value="bkash">bKash</option>
+        </select>
+        <button type="submit">Pay Bill</button>
+      </form>
+      <p id="message"></p>
+    </div>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
